@@ -1,0 +1,277 @@
+/* header css */
+nav{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+}
+nav .navbar-nav{
+    margin-left: 50px;
+}
+nav .navbar-nav .nav-item{
+    margin-left: 20px;
+}
+nav form{
+    margin-left: 250px;
+}
+nav .nav-link{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+nav .nav-link:hover{
+    color: #cc2ecf;
+}
+nav link {
+    color: #cc2ecf;
+}
+nav .navbar-toggler-icon{
+    color: #cc2ecf;
+}
+
+/* Home Page */
+.home {
+    height: 83vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/public/images/home.webp');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+.home .col-md-12{
+    position: relative;
+    top: 150px;
+    font-weight: bold;
+}
+.home .col-md-12 .btn{
+    font-weight: bold;
+    background-color: #d9bb89;
+    transition-duration: 0.5s;
+}
+.home .col-md-12 .btn:hover{
+    background-color: #cc2ecf;
+    color: white;
+}
+.home .col-md-12 h1{
+    font-family: sans-serif;
+    text-shadow: 1px 2px 3px #484848;
+    font-weight: bold;
+}
+.home .col-md-12 h1 span{
+    color: #cc2ecf;
+
+}
+.label {
+    height: 35px;
+    width: 125px;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #d9bb89;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* courses */
+.courses h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px #484848;
+}
+
+.courses h1 span {
+    color: #cc2ecf;
+}
+.courses .col-md-3 .card img{
+    width: 100%;
+    height: 250px;
+}
+
+/* contact */
+.contact{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.contact p{
+    color: #cc2ecf;
+}
+.contact form input{
+    height: 60px;
+    border-radius: 0;
+    border: 1px solid black;
+}
+.contact form textarea{
+    height: 100px;
+    border-radius: 0;
+    border: 1px solid black;
+}
+.contact form .btn{
+    background-color: #cc2ecf;
+    color: white;
+    height: 50px;
+    width: 100%;
+    border-radius: 0;
+    font-weight: bold;
+}
+.contact form .btn:hover{
+    background-color: #b42ab6;
+}
+
+/* responsive */
+
+@media(max-width: 1200px){
+    /* header */
+    nav .navbar-nav{
+        margin-left: 0px;
+    }
+    nav .navbar-nav .nav-item{
+        margin-left: 0px;
+    }
+    nav form{
+        margin-left: 0px;
+    }
+    
+}
+
+@media(max-width: 760px){
+    .home .col-md-12{
+        top: 200px;
+    }
+    .courses .col-md-3 .card img{
+        width: 100%;
+        height: 300px;
+    }
+    footer span{
+        font-size: 12px;
+    }
+    
+     
+}
+
+@media(max-width: 400px){
+    nav .nav-item{
+        font-size: 12px;
+    }
+    .home .btn{
+        height: 30px;
+        width: auto;
+        font-weight: 100;
+    }
+    .home .btn span{
+        position: relative;
+        bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .courses  h1{
+        font-size: 20px;
+    }
+    .courses .col-md-3 .card h5{
+        font-size: 15px;
+    }
+    .courses .col-md-3 .card i{
+        font-size: 12px;
+    }
+    .courses .col-md-3 .card b{
+        font-size: 10px;
+    }
+    .courses .col-md-3 .card .label{
+        height: 30px;
+        width: 100px;
+    }
+    .courses .col-md-3 .card .label span{
+        font-size: 10px;
+        position: relative;
+        bottom: 3px;
+    }
+    .courses .col-md-3 .card img{
+        width: 100%;
+        height: 150px;
+    }
+    .contact h1{
+        font-size: 20px;
+    }
+    .contact p{
+        font-size: 10px;
+    }
+    .contact form label{
+        font-size: 12px;
+    }
+    .contact form input{
+        height: 40px;
+    }
+    .contact form textarea{
+        height: 50px;
+    }
+    .contact form .btn{
+        height: 35px;
+        font-size: 12px;
+    }
+    footer span{
+        font-size: 10px;
+    }
+     
+}
+
+@media(max-width: 200px){
+    nav .nav-item{
+        font-size: 10px;
+    }
+    .home .btn{
+        height: 20px;
+        width: auto;
+        font-weight: 100;
+    }
+    .home .btn span{
+        position: relative;
+        bottom: 17px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .courses  h1{
+        font-size: 12px;
+    }
+    .courses .col-md-3 .card h5{
+        font-size: 10px;
+    }
+    .courses .col-md-3 .card i{
+        font-size: 7px;
+    }
+    .courses .col-md-3 .card b{
+        font-size: 10px;
+    }
+    .courses .col-md-3 .card .label{
+        height: 25px;
+        width: 80px;
+    }
+    .courses .col-md-3 .card .label span{
+        font-size: 10px;
+        position: relative;
+        bottom: 6px;
+    }
+    .courses .col-md-3 .card img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .contact h1{
+        font-size: 10px;
+    }
+    .contact p{
+        font-size: 6px;
+    }
+    .contact form label{
+        font-size: 7px;
+    }
+    .contact form input{
+        height: 20px;
+    }
+    .contact form textarea{
+        height: 20px;
+    }
+    .contact form .btn{
+        height: 20px;
+        font-size: 6px;
+    }
+    footer span{
+        font-size: 4px;
+    }
+}
