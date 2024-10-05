@@ -16,9 +16,16 @@ app.use(bodyParser.json());
 
 // connect to MongoDB
 
-mongoose.connect(process.env.MONGODB_URI)
-    .then(()=>console.log('Database Connected'))
-    .catch(err=> console.log(err));
+const dbUri = process.env.MONGODB_CLOUD_URI || process.env.MONGODB_LOCAL_URI;
+
+mongoose.connect(dbUri);
+
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", () => {
+    console.log('Database Connected');
+});
     
 app.use('/api/contact', contactRoutes);
 
