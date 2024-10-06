@@ -13,9 +13,8 @@ export const Contact = () => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        // const apiUri = process.env.REACT_CLOUD_API || process.env.REACT_LOCAL_API;
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
+            const response = await axios.post('https://codeschoolbackend.onrender.com/api/contact' || 'http://localhost:5000/api/contact', formData);
             alert(`Thank for your message, ${response.data.name}`);
             setFormData({ name: '', email: '', message: ''});
         }
