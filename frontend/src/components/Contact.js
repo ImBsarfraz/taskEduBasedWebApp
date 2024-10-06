@@ -14,7 +14,7 @@ export const Contact = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
+            const response = await axios.post(`${process.env.REACT_CLOUD_API || process.env.REACT_LOCAL_API}`, formData);
             alert(`Thank for your message, ${response.data.name}`);
             setFormData({ name: '', email: '', message: ''});
         }
