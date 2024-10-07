@@ -89,7 +89,7 @@ nav .navbar-toggler-icon{
 .contact{
     font-family: sans-serif;
     font-weight: bold;
-    height: 100vh;
+    height: auto;
 }
 .contact p{
     color: #cc2ecf;
@@ -188,7 +188,8 @@ nav .navbar-toggler-icon{
         height: 150px;
     }
     .contact{
-        margin-top: 100px;
+        margin-top: 70px;
+        margin-bottom: 50px;
     }
     .contact h1{
         font-size: 20px;
